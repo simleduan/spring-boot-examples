@@ -1,6 +1,5 @@
 package com.neo;
 
-import com.sinosig.sunflower.fw.util.ThreadLocalUtil;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -23,6 +22,5 @@ public class Test {
     public void test(){
         String property = environment.getProperty("clientId", "unknown");
         System.out.println(property);
-        System.out.println(ThreadLocalUtil.getInstance().getTraceId().toString());
     }
 }

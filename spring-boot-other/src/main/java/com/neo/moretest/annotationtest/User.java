@@ -1,0 +1,1 @@
+package com.neo.moretest.annotationtest;public class User {    public User() {        System.out.println("user constructor finish,hashCode is "+this.hashCode());    }}
