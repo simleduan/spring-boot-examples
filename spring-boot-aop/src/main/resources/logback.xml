@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="LOG_HOME" value="./logs/" />
+    <property name="APPNAME" value="spring-boot-aop" />
+    <property name="MDC_LOG_PATTERN"
+              value="%d{yyyy-MM-dd'T'HH:mm:ss.SSS} %p %t %logger{50} [line:%L %msg]%n" />
+    <property name="SIMPLE_LOG_PATTERN"
+              value="%d{yyyy-MM-dd'T'HH:mm:ss.SSS} %msg %n" />
+
+    <!--ConsoleAppender是打印到控制台的-->
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <!--encoder 默认配置为PatternLayoutEncoder-->
+        <encoder>
+            <pattern>${MDC_LOG_PATTERN}</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+        <!--此日志appender是为开发使用，只配置最底级别，控制台输出的日志级别是大于或等于此级别的日志信息-->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>all</level>
+        </filter>
+    </appender>
+
+    <!--输出到info-->
+    <appender name="info" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/${APPNAME}/console.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_HOME}/${APPNAME}/console-%d{yyyy-MM-dd}.log</FileNamePattern>
+            <MaxHistory>7</MaxHistory>
+        </rollingPolicy>
+        <append>true</append>
+        <encoder>
+            <pattern>${MDC_LOG_PATTERN}</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter"><!-- 只打印INFO日志 -->
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!--输出到info-->
+    <appender name="debug" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/${APPNAME}/debug.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_HOME}/${APPNAME}/debug-%d{yyyy-MM-dd}.log</FileNamePattern>
+            <MaxHistory>7</MaxHistory>
+        </rollingPolicy>
+        <append>true</append>
+        <encoder>
+            <pattern>${MDC_LOG_PATTERN}</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter"><!-- 只打印INFO日志 -->
+            <level>DEBUG</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!--输出到error-->
+    <appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/${APPNAME}/error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${APPNAME}/error-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <MaxHistory>7</MaxHistory>
+        </rollingPolicy>
+        <append>true</append>
+        <encoder>
+            <pattern>${MDC_LOG_PATTERN}</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter"><!-- 只打印ERROR日志 -->
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <appender name="aopInfoAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/${APPNAME}/interface.log</file>
+        <!-- 日志记录器的滚动策略，按日期，按大小记录 -->
+        <!--TimeBasedRollingPolicy 实现的是基于时间的分包策略，分包间隔是根据fileNamePattern中指定的事件最小单位-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 归档的日志文件的路径，例如今天是2018-12-19日志，当前写的日志文件路径为file节点指定，可以将此文件与file指定文件路径设置为不同路径，从而将当前日志文件或归档日志文件置不同的目录。
+            			而2018-12-01的日志文件在由fileNamePattern指定。%d{yyyy-MM-dd}指定日期格式，%i指定索引 -->
+            <fileNamePattern>${LOG_HOME}/${APPNAME}/interface-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <MaxHistory>15</MaxHistory>
+        </rollingPolicy>
+        <!-- 追加方式记录日志 -->
+        <append>true</append>
+        <!-- 日志文件的格式和编码 -->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${SIMPLE_LOG_PATTERN}</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+        <!--此日志文件只记录info级别的-->
+        <!--filter是日志过滤器-->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!--过滤级别-->
+            <level>info</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <logger name="aopLogger" level="INFO" additivity="true">
+        <appender-ref ref="aopInfoAppender" />
+    </logger>
+
+    <!-- log level TRACE, DEBUG, INFO, WARN, ERROR, ALL and OFF,default：DEBUG。-->
+    <root level="info">
+        <appender-ref ref="info" />
+        <appender-ref ref="error" />
+        <appender-ref ref="stdout" />
+        <appender-ref ref="debug" />
+    </root>
+</configuration>
