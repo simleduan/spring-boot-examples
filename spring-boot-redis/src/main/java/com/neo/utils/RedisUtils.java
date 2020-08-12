@@ -1,12 +1,5 @@
 package com.neo.utils;
 
-/**
- * @Description: TODO
- * @Author 樊斌
- * @Date 2020/8/11
- * @Version V1.0
- **/
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;

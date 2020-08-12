@@ -6,12 +6,6 @@ import org.aspectj.lang.annotation.*;
 
 import java.util.Arrays;
 
-/**
- * @Description: TODO
- * @Author 樊斌
- * @Date 2020/8/12
- * @Version V1.0
- **/
 @Aspect
 @Slf4j(topic = "aopLogger")
 public class ExecuteAspect {

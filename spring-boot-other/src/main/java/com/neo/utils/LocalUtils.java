@@ -5,12 +5,6 @@ import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.util.Enumeration;
 
-/**
- * @Description: TODO
- * @Author 樊斌
- * @Date 2020/8/11
- * @Version V1.0
- **/
 public class LocalUtils {
     public static  String getHostName(){
         String hostName ="";

@@ -6,12 +6,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.env.Environment;
 import org.springframework.test.context.junit4.SpringRunner;
 
-/**
- * @Description: TODO
- * @Author 樊斌
- * @Date 2020/8/11
- * @Version V1.0
- **/
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class Test {

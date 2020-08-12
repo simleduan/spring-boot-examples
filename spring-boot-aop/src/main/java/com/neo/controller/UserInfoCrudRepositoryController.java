@@ -9,13 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Iterator;
 
-
-/**
- * @Description: TODO
- * @Author 樊斌
- * @Date 2020/8/12
- * @Version V1.0
- **/
 @RestController
 public class UserInfoCrudRepositoryController {
 
