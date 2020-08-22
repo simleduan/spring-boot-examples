@@ -1,0 +1,1 @@
+package com.neo.thirteen;/** * Created by cainiao on 2020-08-22 14:16 */public class Go {    static void go(){        System.out.println("GO::go()");    }}

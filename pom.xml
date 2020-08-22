@@ -12,6 +12,7 @@
         <module>spring-boot-other</module>
         <module>spring-boot-aop</module>
         <module>spring-boot-spring</module>
+        <module>spring-boot-onjava8</module>
     </modules>
 
     <packaging>pom</packaging>

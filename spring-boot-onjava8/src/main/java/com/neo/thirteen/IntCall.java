@@ -1,0 +1,1 @@
+package com.neo.thirteen;/** * Created by cainiao on 2020-08-22 13:10 */public interface IntCall {    int call(int arg);}

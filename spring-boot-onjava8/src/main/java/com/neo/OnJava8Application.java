@@ -1,0 +1,1 @@
+package com.neo;import org.springframework.boot.SpringApplication;import org.springframework.boot.autoconfigure.SpringBootApplication;/** * Created by cainiao on 2020-08-22 11:50 */@SpringBootApplicationpublic class OnJava8Application {    public static void main(String[] args) {        SpringApplication.run(OnJava8Application.class,args);    }}
