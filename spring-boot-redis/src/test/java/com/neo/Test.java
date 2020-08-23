@@ -4,7 +4,9 @@ import com.neo.model.User;
 import com.neo.utils.RedisUtils;
 import org.junit.Assert;
 import org.junit.runner.RunWith;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.cache.CacheProperties;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -19,7 +21,7 @@ import java.util.concurrent.TimeUnit;
  * @Date 2020/8/11
  * @Version V1.0
  **/
-@SpringBootTest
+@SpringBootTest(classes = RedisApplication.class)
 @RunWith(SpringRunner.class)
 public class Test {
 
@@ -31,6 +33,14 @@ public class Test {
 
     @Autowired
     private RedisUtils redisUtils;
+
+    @Autowired
+    private RedissonClient redissonClient;
+
+    @org.junit.Test
+    public void testRedissonClient(){
+        System.out.println(redissonClient);
+    }
 
     @org.junit.Test
     public void test(){

@@ -1,0 +1,1 @@
+package com.neo.service;/** * Created by cainiao on 2020-08-23 15:20 * 整合redisson作为分布式锁等功能框架 * 1、引入依赖 * 2、配置redisson */public class RedissionService {}
