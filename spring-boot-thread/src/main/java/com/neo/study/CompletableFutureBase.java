@@ -1,0 +1,1 @@
+package com.neo.study;import java.util.concurrent.ExecutorService;import java.util.concurrent.Executors;/** * Created by cainiao on 2020-08-30 18:02 */public class CompletableFutureBase {    protected static ExecutorService executorStatic =  Executors.newFixedThreadPool(10);}
