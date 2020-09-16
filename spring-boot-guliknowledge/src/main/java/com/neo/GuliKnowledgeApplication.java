@@ -1,0 +1,1 @@
+package com.neo;import org.springframework.boot.SpringApplication;import org.springframework.boot.autoconfigure.SpringBootApplication;/** * Created by cainiao on 2020-09-13 20:15 */@SpringBootApplicationpublic class GuliKnowledgeApplication {    public static void main(String[] args) {        SpringApplication.run(GuliKnowledgeApplication.class,args);    }}
