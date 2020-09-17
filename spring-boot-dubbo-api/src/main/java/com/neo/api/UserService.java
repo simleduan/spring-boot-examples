@@ -1,0 +1,1 @@
+package com.neo.api;import com.neo.entity.User;import java.util.List;/** * Created by cainiao on 2020-09-17 23:18 */public interface UserService {    List<User> getUserlist();}

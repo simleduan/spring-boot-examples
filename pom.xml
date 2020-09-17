@@ -15,6 +15,9 @@
         <module>spring-boot-onjava8</module>
         <module>spring-boot-thread</module>
         <module>spring-boot-guliknowledge</module>
+        <module>spring-boot-dubbo-api</module>
+        <module>spring-boot-dubbo-provider</module>
+        <module>spring-boot-dubbo-consumer</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -22,7 +25,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.6.RELEASE</version>
+        <version>2.0.5.RELEASE</version>
     </parent>
 
     <dependencies>
