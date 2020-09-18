@@ -1,1 +1,1 @@
-dubbo:  application:    name: spring-boot-dubbo-consumer  registry:    protocol: zookeeper    address: 127.0.0.1:2181server:  port: 8801
+dubbo:  application:    name: spring-boot-dubbo-consumer  registry:    protocol: zookeeper    address: 127.0.0.1:2181  protocol:    name: dubbo    port: 20880#    作为消费者，启动时候不检测生产者是否存在  consumer:    check: falseserver:  port: 8801
