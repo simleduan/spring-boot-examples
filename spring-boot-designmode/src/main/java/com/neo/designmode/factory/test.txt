@@ -1,0 +1,35 @@
+public interface IMask {
+    void showMask();
+}
+
+public class LowEndMask implements IMask {
+    @Override
+    public void showMask(){
+        System.out.println("我的低端口罩");
+    }
+}
+
+public class HighEndMask implements IMask {
+    @Override
+    public void showMask() {
+        System.out.println("我是高端口罩");
+    }
+}
+
+public interface IProtectiveSuit {
+    void showSuit();
+}
+
+public class LowEndProtectiveSuit implements IProtectiveSuit {
+    @Override
+    public void showSuit() {
+        System.out.println("我是低端防护服");
+    }
+}
+
+public class HighEndProtectiveSuit implements IProtectiveSuit {
+    @Override
+    public void showSuit() {
+        System.out.println("我是高端防护服");
+    }
+}
