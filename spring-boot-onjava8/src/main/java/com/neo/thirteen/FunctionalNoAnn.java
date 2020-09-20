@@ -1,1 +1,0 @@
-package com.neo.thirteen;/** * Created by cainiao on 2020-08-22 14:31 */public interface FunctionalNoAnn {    String goodBye(String arg);}

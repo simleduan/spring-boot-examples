@@ -1,1 +1,0 @@
-package com.neo.thirteen;/** * Created by cainiao on 2020-08-22 12:10 */public class Soft implements Strategy {    @Override    public String approach(String msg) {        return msg.toLowerCase()+"?";    }}

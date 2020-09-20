@@ -1,1 +1,0 @@
-package com.neo.thirteen;/** * Created by cainiao on 2020-08-22 13:27 */public class IntCallImpl implements IntCall {    @Override    public int call(int arg) {        return arg == 0?0:arg==1?1:call(arg-1)+call(arg-2);    }}
