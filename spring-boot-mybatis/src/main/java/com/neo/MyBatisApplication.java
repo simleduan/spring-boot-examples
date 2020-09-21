@@ -1,0 +1,1 @@
+package com.neo;/** * Created by cainiao on 2020-09-21 22:25 * <classPathEntry location="/Users/fanbin/Documents/study/reposity/mysql/mysql-connector-java/5.1.48/mysql-connector-java-5.1.48.jar"/> * */public class MyBatisApplication {}
