@@ -37,7 +37,7 @@
             <!-- 建立modal对象是否不可改变 即生成的modal对象不会有setter方法，只有构造方法 -->
             <property name="immutable" value="false"/>
         </javaModelGenerator>
-        <!-- targetPackage 和 targetProject：生成的 mapper 文件的包和位置 -->
+        <!-- targetPackage 和 targetProject：生成的 mappers 文件的包和位置 -->
         <sqlMapGenerator targetPackage="mapper"
                          targetProject="src/main/resources/">
             <!-- 针对数据库的一个配置，是否把 schema 作为字包名 -->

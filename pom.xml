@@ -20,6 +20,7 @@
         <module>spring-boot-dubbo-consumer</module>
         <module>spring-boot-designmode</module>
         <module>spring-boot-mybatis</module>
+        <module>spring-boot-mybatis-more</module>
     </modules>
 
     <packaging>pom</packaging>

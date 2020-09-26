@@ -5,7 +5,7 @@ spring:
     username: root
     password: root
 mybatis:
-  mapper-locations: classpath:mapper/*.xml
+  mapper-locations: classpath:mappers/*.xml
   type-aliases-package: com.neo.generator.entity
   configuration:
     map-underscore-to-camel-case: true

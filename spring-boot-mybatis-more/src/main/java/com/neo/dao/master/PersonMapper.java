@@ -1,0 +1,1 @@
+package com.neo.dao.master;import org.apache.ibatis.annotations.Select;import java.util.Map;/** * Created by cainiao on 2020-09-26 21:42 */public interface PersonMapper {    @Select("SELECT * FROM person WHERE id = 1")    Map<String,Object> queryPersonById();}
