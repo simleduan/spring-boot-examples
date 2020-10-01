@@ -30,9 +30,4 @@ public class Test {
         int insert = personMapper.insert(person);
         System.out.println(insert);
     }
-
-    @org.junit.Test
-    public void test1(){
-        System.out.println("11111111");
-    }
 }
