@@ -1,0 +1,1 @@
+package com.neo.designmode.singleton;/** * Created by cainiao on 2020-10-09 22:03 */public class EagerSingleton {    private static EagerSingleton instance = new EagerSingleton();    private EagerSingleton() {    }    public static EagerSingleton getInstance(){        return instance;    }}
