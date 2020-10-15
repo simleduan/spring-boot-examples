@@ -1,8 +1,11 @@
 package com.neo.generator.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Person {
+//存放在共享缓存中数据进行序列化操作和反序列化操作
+//因此数据对应实体类必须实现【序列化接口】
+public class Person implements Serializable {
     private Integer id;
 
     private String name;
@@ -83,7 +86,22 @@ public class Person {
         return policyNo;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", hometown='" + hometown + '\'' +
+                ", createTime=" + createTime +
+                ", policyNo='" + policyNo + '\'' +
+                '}';
+    }
+
     public void setPolicyNo(String policyNo) {
+
+
         this.policyNo = policyNo == null ? null : policyNo.trim();
     }
 }
