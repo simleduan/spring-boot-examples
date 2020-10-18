@@ -22,6 +22,7 @@
         <module>spring-boot-mybatis</module>
         <module>spring-boot-mybatis-more</module>
         <module>spring-boot-leetcode</module>
+        <module>spring-boot-batch</module>
     </modules>
 
     <packaging>pom</packaging>

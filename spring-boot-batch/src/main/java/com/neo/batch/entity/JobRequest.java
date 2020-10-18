@@ -1,0 +1,1 @@
+package com.neo.batch.entity;/** * Created by cainiao on 2020-10-18 20:12 */public class JobRequest {    private String jobName;    public String getJobName() {        return jobName;    }    public void setJobName(String jobName) {        this.jobName = jobName;    }}

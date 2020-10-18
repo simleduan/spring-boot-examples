@@ -1,0 +1,1 @@
+package com.neo.batch.exception;/** * Created by cainiao on 2020-10-18 19:57 */public class BatchException extends Exception {    public BatchException(String message) {        super(message);    }}

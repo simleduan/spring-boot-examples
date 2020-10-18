@@ -1,0 +1,1 @@
+package com.neo.batch.step;import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;import org.springframework.beans.factory.annotation.Autowired;/** * Created by cainiao on 2020-10-18 19:41 */public class BaseStep {    @Autowired    protected StepBuilderFactory stepBuilderFactory;}
