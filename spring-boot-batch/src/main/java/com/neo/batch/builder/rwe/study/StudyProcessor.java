@@ -1,0 +1,1 @@
+package com.neo.batch.builder.rwe.study;import org.springframework.batch.item.ItemProcessor;/** * Created by cainiao on 2020-10-18 20:50 */public class StudyProcessor implements ItemProcessor {    @Override    public Object process(Object item) throws Exception {        return null;    }}
