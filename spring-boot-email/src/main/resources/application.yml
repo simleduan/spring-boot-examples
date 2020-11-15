@@ -1,0 +1,17 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 510988896@qq.com
+    password: tjtxyzwqoxjrbgjg
+  thymeleaf:
+    check-template: true
+    prefix: classpath:/templates/
+    excluded-view-names: # comma-separated list of view names   that should be excluded from resolution
+    view-names: # comma-separated list of view names that can be resolved
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html # ;charset=<encoding> is added
+    cache: true # set to false for hot refresh

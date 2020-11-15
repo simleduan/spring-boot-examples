@@ -24,6 +24,7 @@
         <module>spring-boot-leetcode</module>
         <module>spring-boot-batch</module>
         <module>spring-boot-common</module>
+        <module>spring-boot-email</module>
     </modules>
 
     <packaging>pom</packaging>
