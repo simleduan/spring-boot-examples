@@ -1,0 +1,1 @@
+package com.neo.designmode.factory;/** * Created by cainiao on 2021/1/3 5:52 下午 * 抽象工厂 */public abstract class Factory<T> {    abstract Product createPrduct(Class<T> clz);}

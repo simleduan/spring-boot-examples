@@ -1,0 +1,1 @@
+package com.neo.designmode.factory;/** * Created by cainiao on 2021/1/3 5:50 下午 * 抽象的产品 */public abstract class Product {    public abstract void method();}

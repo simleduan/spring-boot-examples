@@ -1,0 +1,1 @@
+package com.neo.designmode.strategy;/** * Created by cainiao on 2021/1/3 5:58 下午 * 具体的策略实现 */public class StrategyVip implements Strategy{    @Override    public void strategyImplementation() {        System.out.println("this is vip consumer");    }}

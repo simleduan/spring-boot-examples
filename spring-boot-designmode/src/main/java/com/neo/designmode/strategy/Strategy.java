@@ -1,0 +1,1 @@
+package com.neo.designmode.strategy;/** * Created by cainiao on 2021/1/3 5:57 下午 * 策略接口 */public interface Strategy {    void strategyImplementation();}

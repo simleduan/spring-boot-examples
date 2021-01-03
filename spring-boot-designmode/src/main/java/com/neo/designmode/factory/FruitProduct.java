@@ -1,0 +1,1 @@
+package com.neo.designmode.factory;/** * Created by cainiao on 2021/1/3 5:51 下午 * 具体的产品 */public class FruitProduct extends Product{    @Override    public void method() {    }}

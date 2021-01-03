@@ -1,0 +1,1 @@
+package com.neo.designmode.threekuai;/** * Created by cainiao on 2021/1/3 6:05 下午 */public class NewUserRewardStrategyA extends RewardStrategy{    @Override    public void reward(long userId) {        System.out.println("新用户返奖策略A");    }}

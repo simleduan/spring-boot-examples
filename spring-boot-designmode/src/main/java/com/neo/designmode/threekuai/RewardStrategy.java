@@ -1,0 +1,1 @@
+package com.neo.designmode.threekuai;/** * Created by cainiao on 2021/1/3 6:03 下午 */public abstract class RewardStrategy {    public abstract void reward(long userId);    //更新用户信息，以及结算    public void insertRewardAndSettlement(long userId,int reward){    }}

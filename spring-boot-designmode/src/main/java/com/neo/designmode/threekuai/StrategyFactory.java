@@ -1,0 +1,1 @@
+package com.neo.designmode.threekuai;/** * Created by cainiao on 2021/1/3 6:07 下午 * 抽象工厂 */public abstract class StrategyFactory<T> {    abstract RewardStrategy createStrategy(Class<T> clz);}

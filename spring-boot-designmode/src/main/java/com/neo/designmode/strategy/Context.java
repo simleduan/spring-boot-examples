@@ -1,0 +1,1 @@
+package com.neo.designmode.strategy;/** * Created by cainiao on 2021/1/3 5:59 下午 * 封装策略，屏蔽高层模块对策略算法的直接访问，屏蔽可能存在的策略变化 */public class Context {    private Strategy strategy = null;    public Context(Strategy strategy) {        this.strategy = strategy;    }    public void doStrategy(){        strategy.strategyImplementation();    }}
