@@ -1,1 +1,9 @@
-package com.neo.designmode.threekuai;/** * Created by cainiao on 2021/1/3 6:10 下午 * 具体工厂创建具体策略 */public class RewardStrategyFactory extends StrategyFactory{    @Override    RewardStrategy createStrategy(Class clz) {        RewardStrategy rewardStrategy = null;        try {            rewardStrategy = (RewardStrategy)Class.forName(clz.getName()).newInstance();        } catch (Exception e) {            e.printStackTrace();        }        return rewardStrategy;    }}
+package com.neo.designmode.threekuai;
+
+/**
+ * create by xiaocai on 2021/1/4 10:03
+ * 返奖抽象策略工厂
+ **/
+public abstract class RewardStrategyFactory<T> {
+   abstract RewardStrategy createRewardStrategy(Class<T> clz);
+}

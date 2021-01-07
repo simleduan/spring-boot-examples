@@ -1,1 +1,0 @@
-package com.neo.designmode.threekuai;/** * Created by cainiao on 2021/1/3 6:05 下午 */public class OldUserRewardStrategyA extends RewardStrategy{    @Override    public void reward(long userId) {        System.out.println("老用户返奖策略A");    }}
