@@ -1,1 +1,1 @@
-package com.neo;/** * Created by cainiao on 2020-08-27 20:21 */public class ThreadApplication {}
+package com.neo;import org.springframework.boot.SpringApplication;import org.springframework.boot.autoconfigure.SpringBootApplication;/** * Created by cainiao on 2020-08-27 20:21 */@SpringBootApplicationpublic class ThreadApplication {    public static void main(String[] args) {        SpringApplication.run(ThreadApplication.class,args);    }}
