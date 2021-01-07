@@ -1,0 +1,1 @@
+package com.neo.entity;import lombok.Data;/** * Created by cainiao on 2021/1/7 10:45 下午 */@Datapublic class User {    private Long id;    private String name;    private Integer age;    private String email;}

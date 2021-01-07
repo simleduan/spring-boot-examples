@@ -1,0 +1,1 @@
+package com.neo.mapper;import com.baomidou.mybatisplus.core.mapper.BaseMapper;import com.neo.entity.User;/** * Created by cainiao on 2021/1/7 10:45 下午 */public interface UserMapper extends BaseMapper<User> {}
