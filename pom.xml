@@ -26,6 +26,7 @@
         <module>spring-boot-common</module>
         <module>spring-boot-email</module>
         <module>spring-boot-mybatisplus</module>
+        <module>spring-boot-activiti</module>
     </modules>
 
     <packaging>pom</packaging>
