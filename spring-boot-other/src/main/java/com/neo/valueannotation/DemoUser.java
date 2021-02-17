@@ -1,0 +1,1 @@
+package com.neo.valueannotation;import lombok.Data;/** * Created by cainiao on 2021/2/17 9:46 下午 */@Datapublic class DemoUser {    private String name;    private Integer age;}
