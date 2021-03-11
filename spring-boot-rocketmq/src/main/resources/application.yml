@@ -1,0 +1,8 @@
+
+lili:
+  rocketmq:
+    produce: user-group
+    consumer: user-group
+    nameserver: localhost:9876
+server:
+  port: 8076

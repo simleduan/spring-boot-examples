@@ -29,6 +29,7 @@
         <module>spring-boot-activiti</module>
         <module>spring-boot-rabbitmq-product</module>
         <module>spring-boot-rabbitmq-consumer</module>
+        <module>spring-boot-rocketmq</module>
     </modules>
 
     <packaging>pom</packaging>
