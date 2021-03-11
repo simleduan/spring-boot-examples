@@ -27,6 +27,8 @@
         <module>spring-boot-email</module>
         <module>spring-boot-mybatisplus</module>
         <module>spring-boot-activiti</module>
+        <module>spring-boot-rabbitmq-product</module>
+        <module>spring-boot-rabbitmq-consumer</module>
     </modules>
 
     <packaging>pom</packaging>
