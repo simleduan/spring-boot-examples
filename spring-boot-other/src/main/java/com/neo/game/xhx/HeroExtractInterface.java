@@ -1,1 +1,1 @@
-package com.neo.game.xhx;/** * Created by cainiao on 2021/9/23 12:36 下午 */public interface HeroInterface {    void extractHero(String type);}
+package com.neo.game.xhx;/** * Created by cainiao on 2021/9/23 12:36 下午 */public interface HeroExtractInterface {    void extractHero(String type);}

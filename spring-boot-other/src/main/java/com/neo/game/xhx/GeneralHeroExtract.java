@@ -1,1 +1,1 @@
-package com.neo.game.xhx;/** * Created by cainiao on 2021/9/23 12:38 下午 * * HeroExtract * GeneralHeroExtract * ElitismHeroExtract * HeroExtract */public class GeneralExtract implements HeroExtractInterface {    @Override    public void extractHero(String type) {    }}
+package com.neo.game.xhx;/** * Created by cainiao on 2021/9/23 12:38 下午 */public class GeneralHeroExtract implements HeroExtractInterface {    @Override    public void extractHero(String type) {    }}

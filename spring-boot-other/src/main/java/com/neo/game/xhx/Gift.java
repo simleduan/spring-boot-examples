@@ -1,1 +1,1 @@
-package com.neo.game.xhx;/** * Created by cainiao on 2021/9/23 9:49 上午 */public class Gift {}
+package com.neo.game.xhx;import lombok.Data;/** * Created by cainiao on 2021/9/23 9:49 上午 */@Datapublic class Gift {    private int id;         //奖品Id    private String name;    //奖品名称    private double prob;    //获奖概率}

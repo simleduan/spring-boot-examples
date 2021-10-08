@@ -1,1 +1,1 @@
-package com.neo.game.xhx;/** * Created by cainiao on 2021/9/23 12:42 下午 */public class UncommonHeroExtract {}
+package com.neo.game.xhx;/** * Created by cainiao on 2021/9/23 12:42 下午 */public class UncommonHeroExtract implements HeroExtractInterface{    @Override    public void extractHero(String type) {    }}
